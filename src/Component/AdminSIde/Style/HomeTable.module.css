@@ -1,0 +1,58 @@
+.Tablearea {
+  margin-top: 100px;
+  padding: 10px;
+}
+.Table {
+  width: 100%;
+  text-align: center;
+}
+
+.TableHead {
+  font-size: larger;
+}
+.TableHead th {
+  padding: 20px;
+}
+.TableBody {
+  font-size: large;
+}
+.ProductImage {
+  width: 20%;
+}
+.img {
+  width: 50%;
+  height: 100%;
+  border-radius: 60%;
+  float: left;
+}
+.Text {
+  margin-top: 50px;
+}
+.TableBody td {
+  padding: 25px;
+}
+
+.TableHead th {
+  border-bottom: 1px solid lightgray;
+  border-top: 1px solid lightgray;
+}
+.TableBody td {
+  border-bottom: 1px solid lightgray;
+}
+
+.HeadingM {
+  text-align: center;
+  font-size: 48px;
+}
+.button {
+  border: none;
+  padding: 10px;
+  font-size: large;
+  background-color: rgba(235, 71, 59, 0.911);
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 4px 6px rgb(63, 60, 60);
+}
+.button:active {
+  box-shadow: none;
+}

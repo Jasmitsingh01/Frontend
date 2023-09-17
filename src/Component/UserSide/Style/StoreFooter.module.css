@@ -1,0 +1,18 @@
+.footer {
+  background-color: rgb(97, 91, 91);
+  color: white;
+  position: fixed;
+  top: 95%;
+  width: 99%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_link {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_link li {
+  margin: 5px;
+}

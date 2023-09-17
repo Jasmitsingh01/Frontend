@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.Background_Banner {
+  background-image: url("../Images/home.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 500px;
+  padding: 50px;
+}
+.Para {
+  margin-left: 20px;
+  font-size: 48px;
+  color: white;
+  margin: 50px;
+}
+.button {
+  margin: 50px;
+  margin-top: 10px;
+  padding: 10px;
+  width: 20%;
+  border: none;
+  box-shadow: 2px 3px 5px rgb(65, 64, 64);
+  font-size: large;
+  transition: background-color 2s;
+  border-radius: 5px;
+}
+.button:active {
+  box-shadow: none;
+}
+.button:hover {
+  background-color: black;
+  color: white;
+}
+.NavBar_Home {
+  display: flex;
+  justify-content: space-between;
+  background-color: #06578a;
+  color: white;
+  padding: 10px;
+}
+.Logo_area {
+  padding: 10px;
+}
+
+.NavLink {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.Logo_Image {
+  width: 70%;
+}
+.NavLink li {
+  margin: 5px;
+  list-style: none;
+}
+
+.NavLink li a {
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+}
+
+.color {
+  border-bottom: 3px solid white;
+}
+#Cart {
+  font-size: 24px;
+}

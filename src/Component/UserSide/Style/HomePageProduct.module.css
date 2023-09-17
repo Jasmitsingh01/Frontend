@@ -1,0 +1,44 @@
+.Freautres_Products {
+  text-align: center;
+  padding-top: 100px;
+}
+.Freautres_Products h2 {
+  font-size: xx-large;
+}
+.Products_area_FP {
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 50px;
+  padding: 20px;
+}
+.Product_Col {
+  margin: 5px;
+}
+.ProducT_Image_area {
+  width: 70%;
+}
+.Product_Image {
+  width: 100%;
+  border-radius: 2%;
+}
+.Product_text,
+.Product_text p {
+  padding: 5px;
+  font-size: small;
+  color: gray;
+}
+.Product_button {
+  padding: 0px;
+}
+.addToCart {
+  width: 70%;
+  padding: 10px;
+  background-color: rgb(24, 23, 23);
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+.addToCart:hover {
+  opacity: 0.9;
+}

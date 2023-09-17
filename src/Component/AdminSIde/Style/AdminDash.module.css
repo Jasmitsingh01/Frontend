@@ -1,0 +1,11 @@
+.Box {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+.LogoArea {
+  width: 10%;
+}
+.Logo {
+  width: 100%;
+}

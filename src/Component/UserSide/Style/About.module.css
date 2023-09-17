@@ -1,0 +1,23 @@
+.section {
+  background-image: url("../Images/banner-03.jpg");
+  min-height: 89vh;
+  background-size: cover;
+}
+.text {
+  background-color: #fff;
+  float: left;
+  width: 40%;
+  padding: 30px;
+  margin: 20px;
+  padding-bottom: 0%;
+}
+.MainHeading {
+  text-align: center;
+  font-size: 48px;
+  padding: 10px;
+}
+.Paragarph {
+  padding: 10px;
+  word-spacing: 5px;
+  font-size: 24px;
+}

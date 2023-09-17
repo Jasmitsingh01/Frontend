@@ -1,0 +1,45 @@
+.Company {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.Tag {
+  display: inline-block;
+  vertical-align: middle;
+}
+.left,
+.right {
+  vertical-align: bottom;
+  font-size: 35px;
+  margin-top: 40px;
+}
+.right {
+  margin-left: 0px;
+}
+.Row {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 100px;
+  overflow: hidden;
+}
+.Column {
+  margin-top: 25px;
+  display: inline-block;
+  animation: marquee 5s linear infinite;
+}
+.Images {
+  margin: 20px;
+  margin-left: 100px;
+  vertical-align: middle;
+}
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}

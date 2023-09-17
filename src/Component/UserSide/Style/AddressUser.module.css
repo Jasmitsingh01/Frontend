@@ -1,0 +1,32 @@
+.Main {
+  margin-top: 100px;
+  text-align: center;
+}
+.ForM {
+  text-align: center;
+  padding: 30px;
+}
+.input {
+  width: 30%;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  margin: 20px;
+}
+.ButtonArea {
+  width: 50%;
+  margin-left: 25%;
+}
+.button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(45, 230, 45);
+  font-size: large;
+  color: white;
+  box-shadow: 2px 4px 8px rgb(56, 55, 55);
+}
+.button:active {
+  box-shadow: none;
+}

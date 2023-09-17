@@ -1,0 +1,20 @@
+.Offers {
+  margin-top: 70px;
+  background-image: url("../Images/banner-03.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  background-attachment: fixed;
+}
+.Offers h4 {
+  margin-left: 40px;
+  padding-top: 100px;
+  color: white;
+  font-size: 70px;
+}
+.Offers p {
+  margin-left: 40px;
+  margin-top: 50px;
+  width: 70%;
+  color: white;
+}

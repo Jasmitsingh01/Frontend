@@ -1,0 +1,111 @@
+.main {
+  padding: 30px;
+  margin-top: 5%;
+  background-color: aliceblue;
+  width: 25%;
+  min-height: 10vh;
+  float: left;
+  padding-top: 0%;
+  overflow: hidden;
+}
+.SearchSection {
+  margin-top: 30px;
+}
+.Input {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid rgb(199, 199, 199);
+  outline: none;
+}
+.searchButton {
+  margin-left: 10px;
+  position: relative;
+  padding: 10px;
+  color: white;
+  background-color: rgb(45, 112, 214);
+  border: none;
+  font-size: large;
+  font-weight: bold;
+  opacity: 0.9;
+}
+.searchButton:hover,
+.FilterButton:hover {
+  opacity: 0.7;
+}
+.FliterSection {
+  margin-top: 30px;
+  font-size: large;
+}
+.FliterSectionH {
+  padding: 10px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  font-size: x-large;
+  font-weight: 500;
+}
+.RangeFilter {
+  margin: 20px;
+  margin-left: 0px;
+}
+.RangeFilter input,
+.RangeFilter span {
+  vertical-align: middle;
+}
+.RangeFilter span {
+  text-align: right;
+}
+.RangeFilter input {
+  width: 100%;
+}
+.Range {
+  accent-color: rgb(45, 112, 214);
+}
+.FilterButton {
+  padding: 10px;
+  width: 40%;
+  margin: 10px;
+  margin-left: 0px;
+  margin-right: 100px;
+  border: 0px;
+  background-color: rgb(45, 112, 214);
+  color: white;
+  font-weight: 500;
+  opacity: 0.9;
+  font-size: medium;
+}
+.CategoriesSection {
+  margin-top: 30px;
+}
+.product {
+  display: flex;
+  justify-content: space-between;
+  font-size: larger;
+}
+.BestSeller {
+  margin-top: 30px;
+}
+.BestSellerSection {
+  margin-top: 20px;
+  display: flex;
+  padding: 10px;
+  width: fit-content;
+  border-bottom: 1px solid black;
+}
+.BestSellerImgSection {
+  width: 20%;
+}
+.BestSellerImg {
+  width: 100%;
+}
+.BestSellerText {
+  margin-left: 20px;
+  margin-top: -10px;
+  font-size: larger;
+}
+@media screen and (max-width: 1024px) {
+  .main {
+    display: block;
+    width: 100%;
+    float: none;
+  }
+}

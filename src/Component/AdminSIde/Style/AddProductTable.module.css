@@ -1,0 +1,101 @@
+.Heading {
+  margin: 50px;
+
+  margin-top: 70px;
+
+  text-align: center;
+  font-size: 28px;
+}
+.Head {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-top: 1px solid lightgray;
+  padding-top: 50px;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 50px;
+  font-size: 28px;
+}
+.body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 99%;
+  text-align: center;
+  font-size: 24px;
+  border-bottom: 1px solid lightgray;
+}
+.SNo {
+  margin: 30px;
+}
+
+.Image {
+  width: 50%;
+  text-align: left;
+  padding: 20px;
+}
+.ProductName {
+  margin: 30px;
+}
+
+.button {
+  padding: 5px;
+  width: 60%;
+  margin: 20px;
+  border: none;
+  box-shadow: 2px 3px 4px gray;
+  color: #fff;
+  background-color: red;
+  font-size: large;
+  font-weight: 600;
+}
+.button:active {
+  box-shadow: none;
+}
+#edit {
+  background-color: rgb(243, 201, 11);
+}
+.Details {
+  display: none;
+}
+.show {
+  display: block;
+  font-size: 28px;
+  border-bottom: 1px Solid gray;
+}
+.ProductName {
+  display: flex;
+  justify-content: space-between;
+}
+.ProductDeatilsB {
+  width: 100%;
+  padding: 5px;
+  font-size: large;
+  font-weight: 600;
+  border: none;
+  background-color: rgb(26, 155, 241);
+  box-shadow: 2px 5px 6px rgb(44, 43, 43);
+  color: #fff;
+}
+.ProductDeatilsB:active {
+  box-shadow: none;
+}
+.ButttonSection {
+  width: 10%;
+}
+.ProductDiscription {
+  width: 50%;
+  word-break: break-all;
+}
+.Update {
+  padding: 10px;
+  width: 30%;
+  text-align: center;
+  font-size: 18px;
+  border: none;
+  color: #fff;
+  box-shadow: 2px 4px 6px black;
+  background-color: green;
+  margin: 20px;
+}
+.Update:active {
+  box-shadow: none;
+}

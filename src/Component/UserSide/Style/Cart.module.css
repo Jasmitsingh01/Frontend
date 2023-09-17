@@ -1,0 +1,166 @@
+.Main_Cart {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.Card {
+  margin-top: 70px;
+  box-shadow: 0px 2px 4px rgb(90, 89, 89);
+  padding: 20px;
+  width: 40%;
+  position: absolute;
+  left: 10%;
+}
+
+.Product {
+  border-bottom: 1px solid lightgrey;
+}
+.Heading {
+  font-size: 35px;
+}
+
+.Product_Image_area {
+  width: 20%;
+  margin-top: 50px;
+}
+.Product_Image {
+  width: 100%;
+  float: left;
+}
+.Box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 15px;
+}
+.Product_text {
+  font-size: x-large;
+  color: gray;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.Product_Name {
+  margin: 10px;
+}
+.Product_Catogarie {
+  margin: 10px;
+}
+.Bttons {
+  padding: 10px;
+}
+.subButtn {
+  font-size: large;
+  width: 40px;
+  height: 30px;
+  border: none;
+  font-weight: 600;
+  box-shadow: 0px 2px 4px rgb(71, 71, 71);
+  background-color: rgb(245, 177, 31);
+}
+.Input {
+  font-size: large;
+  width: 30px;
+  padding-left: 20px;
+  height: 30px;
+  border-color: lightgrey;
+  outline: none;
+}
+.AddButtn {
+  font-size: large;
+  width: 40px;
+  height: 30px;
+  font-weight: 600;
+  border: none;
+  box-shadow: 0px 2px 4px rgb(71, 71, 71);
+  background-color: rgb(245, 177, 31);
+}
+.Buttn2 {
+  padding: 30px;
+}
+.button {
+  margin-left: 20px;
+  margin-top: 10px;
+  width: 60%;
+  padding: 10px;
+  font-size: large;
+  background-color: rgb(252, 44, 7);
+  color: black;
+  border: none;
+  box-shadow: 0px 2px 4px rgb(71, 71, 71);
+  border-radius: 5px;
+}
+.button:active,
+.subButtn:active,
+.AddButtn:active {
+  box-shadow: none;
+}
+.Product_Price {
+  text-align: right;
+  font-size: xx-large;
+  font-weight: 550;
+}
+
+.PayRoll {
+  padding: 20px;
+  margin-top: 70px;
+  width: 20%;
+  box-shadow: 0px 2px 4px rgb(71, 71, 71);
+  margin-left: 50%;
+}
+.Heading2 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.TempRuppe {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-size: large;
+  font-weight: 600;
+}
+.Shipping_Delatis {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-size: large;
+  font-weight: 500;
+  border-bottom: 2px solid lightgray;
+  padding-bottom: 20px;
+}
+.ToTal_section {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-size: large;
+  font-weight: 600;
+}
+.Checkout_Section {
+  margin-top: 30px;
+  text-align: center;
+}
+.Checkout {
+  width: 90%;
+  padding: 10px;
+  font-size: large;
+  background-color: rgb(18, 97, 214);
+  border: none;
+  color: white;
+  box-shadow: 0px 2px 4px rgb(71, 71, 71);
+  border-radius: 5px;
+}
+.Checkout:active {
+  box-shadow: none;
+}
+
+.SuccessMessage {
+  text-align: center;
+  font-size: 36px;
+  background-color: rgba(21, 202, 21, 0.486);
+  color: white;
+}
+.ErrorMessage {
+  text-align: center;
+  font-size: 36px;
+  background-color: rgba(252, 47, 47, 0.705);
+  color: white;
+}

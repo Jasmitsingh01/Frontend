@@ -1,0 +1,113 @@
+.main {
+}
+.TextSection {
+  padding: 20px;
+}
+.MainHeading {
+  text-align: center;
+  font-size: 56px;
+}
+.Row {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 30px;
+}
+.InputArea {
+  padding: 10px;
+}
+.Input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+}
+.Input[type="text"] {
+  color: black;
+  font-size: 24px;
+  border-color: black;
+}
+.Input::placeholder {
+  color: black;
+  font-size: 24px;
+  border-color: black;
+}
+.Input[type="email"] {
+  color: black;
+  font-size: 24px;
+  border-color: black;
+}
+
+.textarea {
+  padding: 10px;
+  width: 100%;
+
+  border-color: black;
+  font-size: 24px;
+  border-radius: 5px;
+}
+
+.textarea::placeholder {
+  color: black;
+  font-size: 24px;
+}
+.ButtonArea {
+  padding: 10px;
+}
+.button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  background-color: rgb(89, 157, 247);
+  color: #fff;
+  font-size: medium;
+  border: none;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.SmallRow {
+  display: flex;
+  margin-top: 20px;
+}
+.text {
+  margin: 10px;
+  vertical-align: middle;
+  font-size: 28px;
+}
+.text a {
+  text-decoration: none;
+  color: #000;
+}
+.icon {
+  margin: 10px;
+  vertical-align: middle;
+  font-size: 36px;
+  color: white;
+  background-color: black;
+  padding: 5px;
+  border-radius: 60%;
+}
+#Phone {
+  color: #000;
+  text-decoration: none;
+}
+.Iconrow {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 60px;
+  padding: 20px;
+  border-top: lightgray 1px solid;
+  border-bottom: lightgray 1px solid;
+}
+.Icon {
+  font-size: 36px;
+  transition: padding 2s;
+}
+.Icon:hover {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  border-radius: 60%;
+}
+.CopyRight {
+  margin-top: 20px;
+  color: gray;
+}
