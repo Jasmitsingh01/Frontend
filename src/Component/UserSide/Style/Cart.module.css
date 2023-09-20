@@ -164,3 +164,30 @@
   background-color: rgba(252, 47, 47, 0.705);
   color: white;
 }
+
+@media screen and (max-width:1010px) {
+  .Main_Cart {
+  display: block;
+  }
+  .Card{
+    position: relative;
+    width: 80%;
+  }
+  .PayRoll{
+    margin-left: 10%;
+    width: 80%;
+
+  }
+}
+
+@media screen and (max-width:532px) {
+  .Card{
+    position: relative;
+    width: 80%;
+    left: 20px;
+  }
+  .PayRoll{
+    margin-left: 20px;
+  }
+  
+}

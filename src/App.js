@@ -20,7 +20,7 @@ import MenProduct from "./Component/UserSide/Catogaries/Men";
 import Women from "./Component/UserSide/Catogaries/Women";
 import Profile from "./Component/UserSide/Profile/Profile";
 import AddressUser from "./Component/UserSide/utiles Components/AddressUser";
-
+import AdminProfile from "./Component/AdminSIde/Profile/AdminProfile";
 function App() {
   return (
     <>
@@ -154,6 +154,7 @@ function App() {
             </>
           }
         />
+        <Route path="/admin/Profile" element={<AdminProfile/>}/>
         <Route path="*" element={<Navigate to={"/"} />} />
       </Routes>
     </>

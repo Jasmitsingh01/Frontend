@@ -1,5 +1,5 @@
-.main {
-}
+
+
 .TextSection {
   padding: 20px;
 }
@@ -11,6 +11,7 @@
   display: flex;
   justify-content: space-evenly;
   padding-top: 30px;
+  gap: 30px;
 }
 .InputArea {
   padding: 10px;
@@ -110,4 +111,21 @@
 .CopyRight {
   margin-top: 20px;
   color: gray;
+}
+
+@media screen and (max-width:871px) {
+  .Row{
+    display: block;
+  }
+  
+}
+
+@media screen and (max-width:403px) {
+  .text{
+    font-size: larger;
+  }
+  .icon{
+    font-size: larger;
+
+  }
 }

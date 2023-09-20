@@ -104,6 +104,7 @@
 }
 @media screen and (max-width: 1024px) {
   .main {
+    margin-top: 20%;
     display: block;
     width: 100%;
     float: none;

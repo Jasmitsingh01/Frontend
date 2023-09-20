@@ -14,3 +14,9 @@
 .footer_link li {
   margin: 5px;
 }
+@media screen and (max-width:702px) {
+  .footer_link{
+    display: none;
+  }
+  
+}

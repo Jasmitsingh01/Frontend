@@ -24,7 +24,7 @@ function Catogaries() {
               nihil!
             </div>
             <button className={Css.View} onClick={() => WomenProduct()}>
-              View All Products
+              View Women Products
             </button>
           </div>
           <div className={Css.men}>
@@ -33,7 +33,7 @@ function Catogaries() {
               nihil!
             </div>
             <button className={Css.View} onClick={() => MenProduct()}>
-              View All Products
+              View Men Products
             </button>
           </div>
           <div className={Css.Other}>

@@ -18,3 +18,22 @@
   width: 70%;
   color: white;
 }
+
+@media screen and (max-width:846px) {
+  .Offers{
+    background-size: contain;
+    min-height: 200px;
+
+  }
+  
+}
+@media screen and (max-width:534px) {
+  .Offers h4 {
+    padding-top: 20px;
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width:425px) {
+  
+}

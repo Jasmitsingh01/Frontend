@@ -3,14 +3,17 @@ import Css from "../Style/NavBaR.module.css";
 import Css1 from "../Style/PainNavBar.module.css";
 import { Link } from "react-router-dom";
 import Img from "../Images/logo/logo@2x-free-img.png";
-
+import {AiOutlineMenu} from "react-icons/ai"
 function PainNavBar() {
   const [Home, setHome] = useState("");
   const [About, setAbout] = useState("");
   const [Contact, setContact] = useState("");
   const [Login, setLogin] = useState("");
   const [Cart, setCart] = useState("");
-
+  const[ActiveMenu,SetActive]=useState(false);
+  const UtilHandler=()=>{
+    SetActive(false);
+  }
   useEffect(() => {
     return ActiveCalssHandler();
   });
@@ -55,6 +58,7 @@ function PainNavBar() {
   };
 
   return (
+   <> 
     <nav className={Css1.NavBar_Home}>
       <div className={Css.Logo_area}>
         <img src={Img} alt="Logo" className={Css1.Logo_Image} />
@@ -96,7 +100,54 @@ function PainNavBar() {
           <Link to="/Cart">Cart</Link>
         </li>
       </ul>
+      <div className={Css.ResponsiveMenu} > 
+        <AiOutlineMenu className={Css.menu} onClick={()=>{SetActive(!ActiveMenu)}}/>
+
+      </div>
     </nav>
+    {
+      ActiveMenu?<div >
+      <ul className={Css1.ResponsiveLink}>
+      <li
+             id="Home"
+             className={Home}
+             onClick={() => {ActiveCalssHandler("Home");UtilHandler()}}
+           >
+             <Link to="/">Home</Link>
+           </li>
+           <li
+             id="About"
+             className={About}
+             onClick={() => {ActiveCalssHandler("About");UtilHandler()}}
+           >
+             <Link to="/men">Men</Link>
+           </li>
+           <li
+             id="Contact"
+             className={Contact}
+             onClick={() => {ActiveCalssHandler("Contact");UtilHandler()}}
+           >
+             <Link to="/women"> Women</Link>
+           </li>
+           <li
+             id="Login"
+             className={Login}
+             onClick={() => {ActiveCalssHandler("Login");UtilHandler()}}
+           >
+             <Link to="/store">Store</Link>
+           </li>
+           <li
+             id="Cart"
+             className={Cart}
+             onClick={() => {ActiveCalssHandler("Cart");UtilHandler()}}
+           >
+             <Link to="/Cart">Cart</Link>
+           </li>
+      </ul>
+       </div>:
+       ""
+    }
+    </>
   );
 }
 

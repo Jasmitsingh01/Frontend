@@ -3,6 +3,7 @@ import Css from "../Style/NavBaR.module.css";
 import { Link } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
 import { ImUser } from "react-icons/im";
+import {AiOutlineMenu} from "react-icons/ai"
 import Img from "../Images/logo/logo1-free-img.png";
 function NavbaR() {
   const [Home, setHome] = useState("");
@@ -11,12 +12,15 @@ function NavbaR() {
   const [Login, setLogin] = useState("");
   const [Cart, setCart] = useState("");
   const [Profile, setProfile] = useState("");
+  const[ActiveMenu,SetActive]=useState(false);
   const Data = localStorage.getItem("AuthUserToken");
 
   useEffect(() => {
     return ActiveCalssHandler();
   });
-
+const UtilHandler=()=>{
+  SetActive(false);
+}
   const ActiveCalssHandler = () => {
     if (window.location.pathname === "/About") {
       setHome("");
@@ -65,6 +69,7 @@ function NavbaR() {
   };
 
   return (
+    <>
     <header>
       <nav className={Css.NavBar_Home}>
         <div className={Css.Logo_area}>
@@ -99,8 +104,46 @@ function NavbaR() {
             </Link>
           </li>
         </ul>
+        <div className={Css.ResponsiveMenu}>
+          <AiOutlineMenu className={Css.menu} onClick={()=>SetActive(!ActiveMenu)}/>
+        </div>
       </nav>
     </header>
+    {
+      ActiveMenu?
+      <div>
+   <ul className={Css.ResponsiveLink}>
+          <li id="Home" className={Home} onClick={()=>UtilHandler()}>
+            <Link to="/">Home</Link>
+          </li>
+          <li id="About" className={About} onClick={()=>UtilHandler()}>
+            <Link to="/About">About us</Link>
+          </li>
+          <li id="Contact" className={Contact} onClick={()=>UtilHandler()}>
+            <Link to="/Contact"> Contact us</Link>
+          </li>
+          {Data ? (
+            <li id={Css.Cart} className={Profile} onClick={()=>UtilHandler()}>
+              <Link to="/Profile">
+                <ImUser />
+              </Link>
+            </li>
+          ) : (
+            <li id="Login" className={Login} onClick={()=>UtilHandler()}>
+              <Link to="/Login">Login</Link>
+            </li>
+          )}
+
+          <li id={Css.Cart} className={Cart} onClick={()=>UtilHandler()}>
+            <Link to="/Cart">
+              {" "}
+              <FaShoppingCart />
+            </Link>
+          </li>
+        </ul>
+      </div>:""
+    }
+    </>
   );
 }
 

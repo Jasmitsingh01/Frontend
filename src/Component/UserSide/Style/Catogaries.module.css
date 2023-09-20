@@ -1,7 +1,7 @@
 .Catogaries_area {
   padding: 30px;
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .Product_Catogaries {
   text-align: center;
@@ -22,7 +22,9 @@
 
   background-image: url("../Images/download.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
+
   min-height: 500px;
 }
 .Other {
@@ -30,15 +32,18 @@
   background-image: url("../Images/OIP\ \(4\).jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+
   min-height: 500px;
 }
 .text {
   margin-top: 50%;
   color: white;
   padding: 20px;
+  padding-left: 40px;
 }
 .View {
-  margin-left: 20px;
+  margin-left: 35px;
   padding: 10px;
   background-color: black;
   color: white;
@@ -47,4 +52,53 @@
 }
 .View:hover {
   opacity: 0.8;
+}
+
+@media screen and (max-width:1100px) {
+.Catogaries_area{
+  grid-template-columns: 1fr 1fr;
+}
+  .men{
+    background-size: cover;
+    background-position: none;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .Catogaries_area{
+    grid-template-columns: 1fr;
+  }
+  .women{
+    background-size: contain;
+  }
+  .men{
+    background-size: contain;
+
+  }
+  .Other{
+    background-size: contain;
+
+  }
+  .text{
+    margin-top: 10%;
+margin-left: 150px;
+    width: 40%;
+
+  }
+  .View{
+    margin-left: 200px;
+
+  }
+}
+@media screen and (max-width:508px) {
+  .text{
+    margin-top: 30%;
+margin-left: 0px;
+    width: 80%;
+
+  }
+  .View{
+    margin-left: 100px;
+
+  }
 }

@@ -2,7 +2,7 @@ import React from "react";
 import { TbPigMoney } from "react-icons/tb";
 import { BsCurrencyRupee } from "react-icons/bs";
 import Css from "../Style/TotalIncome.module.css";
-function TotalIncome() {
+function TotalIncome(props) {
   return (
     <div className={Css.Main}>
       <div>
@@ -10,7 +10,7 @@ function TotalIncome() {
         <div className={Css.text}>Eraned Amount</div>
         <div className={Css.Amount}>
           <BsCurrencyRupee className={Css.rupee} />
-          1500
+          {props.Total}
         </div>
       </div>
       <div>

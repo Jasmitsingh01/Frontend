@@ -42,3 +42,17 @@
 .addToCart:hover {
   opacity: 0.9;
 }
+
+@media screen and (max-width:768px) {
+  .Products_area_FP{
+    grid-template-columns: 1fr  1fr 1fr;
+  }
+  
+}
+
+@media screen and (max-width:500px) {
+  .Products_area_FP{
+    grid-template-columns: 1fr 1fr;
+  }
+  
+}

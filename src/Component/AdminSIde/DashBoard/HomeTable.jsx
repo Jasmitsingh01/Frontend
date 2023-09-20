@@ -6,6 +6,7 @@ import axios from "axios";
 function HomeTable() {
   const [DataOrder, setOrder] = useState([]);
   const [Error, setError] = useState("");
+  const[Dispacth,setDispacth]=useState("")
   const data = localStorage.getItem("AuthToken");
   useEffect(() => {
     const GetData = async () => {
@@ -20,8 +21,25 @@ function HomeTable() {
         setError(server.data.message);
       }
     };
+    const DispacthProduct=async()=>{
+      const D=await axios.post(`http://localhost:8000/admin/Dispacth`,{
+        Data:Dispacth
+      })
+      if(D.data.Operation==="Success"){
+        setDispacth("");
+      setError("");
+      }
+      else{
+setError("Something Went Wrong")
+      }
+    }
+    if(Dispacth===""){
     GetData();
-  }, [data]);
+    }
+    else{
+      DispacthProduct();
+    }
+  }, [data,Dispacth]);
   if (!data) {
     return <Navigate to={"/admin/login"} />;
   } else {
@@ -36,21 +54,24 @@ function HomeTable() {
                     <th>S.No</th>
                     <th>Product Name</th>
                     <th>Delivered Address</th>
-                    <th>Product Size</th>
-                    <th>Product color</th>
-                    <th>Stauts Button</th>
+                    <th>Buyer Name</th>
+                    <th>Product Qunatity</th>
+                    <th>Dispacth Button</th>
                   </tr>
                 </thead>
                 <tbody className={Css.TableBody}>
                   {DataOrder.map((value, index) => {
                     return (
-                      <tr>
+                      <tr key={index}>
                         <td>{index + 1}</td>
                         <td className={Css.ProductImage}>
-                          <p className={Css.Text}>{value.Product_id}</p>
+                          <p className={Css.Text}>{value.Product_name}</p>
                         </td>
                         <td>{value.Delveriy_Address}</td>
-                        <td>{value.Status}</td>
+                        <td>{value.Buyer_Name}</td>
+                        <td>{value.Quntatity_of_Products}</td>
+                        <td><button className={Css.button} onClick={()=>setDispacth(value.id)}>Dispacth</button></td>
+
                       </tr>
                     );
                   })}

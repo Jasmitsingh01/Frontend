@@ -15,6 +15,9 @@
   color: white;
   margin: 50px;
 }
+.ResponsiveMenu{
+  display: none;
+}
 .button {
   margin: 50px;
   margin-top: 10px;
@@ -56,7 +59,9 @@
   margin: 5px;
   list-style: none;
 }
-
+.ResponsiveLink{
+  display: none;
+}
 .NavLink li a {
   text-decoration: none;
   color: white;
@@ -68,4 +73,78 @@
 }
 #Cart {
   font-size: 24px;
+}
+
+@media screen and (max-width:878px) {
+  .NavLink{
+    display: none;
+  }
+  .Background_Banner{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .ResponsiveMenu{
+    display: block;
+  }
+  .menu{
+    font-size: 34px;
+    margin: 10px;
+  }
+  .ResponsiveLink{
+    display: block;
+    text-align: center;
+    background-color: black;
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+  }
+  .ResponsiveLink li a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+
+  }
+  .ResponsiveLink li{
+    list-style: none;
+    border: 2px solid white;
+    margin: 10px;
+
+  }
+  .Para{
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width:740px) {
+  .Background_Banner{
+    text-align: center;
+    min-height: 200px;
+
+  }
+  .Para{
+    font-size: 24px;
+  }
+  .button{
+    font-size: 14px;
+    margin: 20px;
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width:604px) {
+  .Background_Banner{
+    min-height: 100px;
+
+  }
+  .Para{
+    margin-top: -20px;
+    font-size: medium;
+  }
+  .button{
+    width: 40%;
+    font-size: small;
+  }
 }
