@@ -2,10 +2,26 @@
   display: flex;
   justify-content: space-between;
   padding: 30px;
+  gap: 30px;
 }
 .LogoArea {
   width: 10%;
 }
 .Logo {
   width: 100%;
+}
+.Responsive{
+  display: none;
+}
+@media screen and (max-width:1020px) {
+  .Box{
+    display: none;
+  }
+.Responsive{
+  display: block;
+  text-align: center;
+  font-size: 36px;
+  margin-top: 20%;
+}
+  
 }

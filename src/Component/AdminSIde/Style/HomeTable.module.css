@@ -56,3 +56,16 @@
 .button:active {
   box-shadow: none;
 }
+.Errors{
+  font-size: 44px;
+  text-align: center;
+}
+@media screen and (max-width:1020px) {
+  
+.Tablearea{
+  display: none;
+}
+.Errors{
+  display: none;
+}
+}

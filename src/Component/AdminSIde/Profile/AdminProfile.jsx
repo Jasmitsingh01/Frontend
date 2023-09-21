@@ -40,7 +40,6 @@ function AdminProfile() {
       localStorage.clear();
       NaviagteS("/admin/Login");
     };
-    console.log(User)
     if (User.Name !== "" && User.email !== "") {
       return (
         <div className={Css.container}>

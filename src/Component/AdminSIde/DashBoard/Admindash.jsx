@@ -51,11 +51,13 @@ if(!Data){
 }
 else{
   return (
+    <>
     <div className={Css.main}>
       <div className={Css.Box}>
         <div className={Css.LogoArea}>
             <img src={Img} alt="Logo" className={Css.Logo}/>
         </div>
+          
         <div onClick={()=>{
             MoveHandler("add")
 }}>
@@ -75,6 +77,10 @@ else{
       </div>
       <div><HomeTable/></div>
     </div>
+    <div className={Css.Responsive}>
+      <p>Please use laptop or Desktop For Better Experience</p>
+    </div>
+    </>
   );
 }
 }

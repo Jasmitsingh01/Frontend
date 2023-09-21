@@ -85,7 +85,7 @@ setError("Something Went Wrong")
       return (
         <>
           <div>
-            <h5 style={{ textAlign: "center" }}>{Error}</h5>
+            <h5 className={Css.Errors}>{Error}</h5>
           </div>
         </>
       );
