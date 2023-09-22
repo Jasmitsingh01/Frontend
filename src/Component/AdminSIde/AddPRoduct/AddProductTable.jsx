@@ -57,7 +57,7 @@ function AddProductTable({ Func }) {
   useEffect(() => {
     const Data = async () => {
       const GetData = await axios.get(
-        `http://localhost:8000/admin/GetProduct/${data}`
+        `https://ecommerce-production-c6bb.up.railway.app/admin/GetProduct/${data}`
       );
       if (GetData.data.error === "NO Products !!!") {
         seterror(GetData.data.error);
@@ -76,7 +76,7 @@ function AddProductTable({ Func }) {
     };
     const DataUpDate = async () => {
       const GetData = await axios.put(
-        `http://localhost:8000/admin/AddProduct`,
+        `https://ecommerce-production-c6bb.up.railway.app/admin/AddProduct`,
         {
           Name,
           Price,
@@ -100,7 +100,7 @@ function AddProductTable({ Func }) {
       const Uid = Delete.UserId;
       const Pid = Delete.ProductId;
       const DeleteDatas = await axios.post(
-        "http://localhost:8000/admin/DeleteProduct",
+        "https://ecommerce-production-c6bb.up.railway.app/admin/DeleteProduct",
         {
           Uid,
           Pid,

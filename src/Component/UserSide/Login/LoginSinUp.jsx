@@ -12,7 +12,7 @@ function LoginSinUp() {
     if (Password.length < 8) {
       seterror("Password Should be greater Than 8 Characters");
     } else {
-      const response = await axios.post("http://localhost:8000/user/login", {
+      const response = await axios.post("https://ecommerce-production-c6bb.up.railway.app/user/login", {
         email: Email,
         Password: Password,
       });

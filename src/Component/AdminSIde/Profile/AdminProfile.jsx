@@ -14,7 +14,7 @@ function AdminProfile() {
   const Datas = localStorage.getItem("AuthToken");
   useEffect(() => {
     const Data = async () => {
-      const response = await axios.post("http://localhost:8000/admin/user", {
+      const response = await axios.post("https://ecommerce-production-c6bb.up.railway.app/admin/user", {
         token: Datas,
       });
       if (response.data.opteration === "Success") {

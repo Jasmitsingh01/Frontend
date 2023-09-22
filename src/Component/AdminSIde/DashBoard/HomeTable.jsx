@@ -11,7 +11,7 @@ function HomeTable() {
   useEffect(() => {
     const GetData = async () => {
       const server = await axios.get(
-        `http://localhost:8000/admin/Order/${data}`
+        `ecommerce-production-c6bb.up.railway.app/admin/Order/${data}`
       );
       if (server.data.Operation === "Success") {
         setOrder(server.data.data);
@@ -22,7 +22,7 @@ function HomeTable() {
       }
     };
     const DispacthProduct=async()=>{
-      const D=await axios.post(`http://localhost:8000/admin/Dispacth`,{
+      const D=await axios.post(`https://ecommerce-production-c6bb.up.railway.app/admin/Dispacth`,{
         Data:Dispacth
       })
       if(D.data.Operation==="Success"){

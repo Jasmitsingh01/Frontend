@@ -27,7 +27,7 @@ function Cart() {
   const Details=JSON.parse(localStorage.getItem('UserDeatils'));
   console.log(Details)
   if(Details){
-  const Order=await axios.post('http://localhost:8000/user/Checkout',{
+  const Order=await axios.post('https://ecommerce-production-c6bb.up.railway.app/user/Checkout',{
     Price:Total_price+500,
   })
 const {amount,key,Checkout}=Order.data;
@@ -41,7 +41,7 @@ const {amount,key,Checkout}=Order.data;
       image: Icon,
       order_id: Checkout.id,
       handler: async(response)=>{
-      const  Data= await axios.post("http://localhost:8000/user/paymentVeriFication",{
+      const  Data= await axios.post("https://ecommerce-production-c6bb.up.railway.app/user/paymentVeriFication",{
         razorpay_payment_id: response.razorpay_payment_id,
         razorpay_order_id:response.razorpay_order_id,
         razorpay_signature: response.razorpay_signature,

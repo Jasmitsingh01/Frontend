@@ -26,7 +26,7 @@ function Admindash() {
 }
 useEffect(()=>{
 const data=async()=>{
-  const Values= await axios.get("http://localhost:8000/admin/AllValues");
+  const Values= await axios.get("https://ecommerce-production-c6bb.up.railway.app/admin/AllValues");
   if(Values.data.operation==="Success"){
     setval({
       Product:Values.data.Total_Product,

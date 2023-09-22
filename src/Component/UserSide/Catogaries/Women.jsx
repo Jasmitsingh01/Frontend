@@ -36,13 +36,13 @@ function Women() {
 
   useEffect(() => {
     const Data = async () => {
-      const Data = await axios.get("http://localhost:8000/user/totalPages");
+      const Data = await axios.get("https://ecommerce-production-c6bb.up.railway.app/user/totalPages");
 
       if (Data.data.operation === "true") {
         setPage(Data.data.data);
         seterror("");
         const response = await axios.get(
-          "http://localhost:8000/user/Catogaries/women?page=1&limit=10"
+          "https://ecommerce-production-c6bb.up.railway.app/user/Catogaries/women?page=1&limit=10"
         );
         if (response.data.operation === "success") {
           setData(response.data.data);
