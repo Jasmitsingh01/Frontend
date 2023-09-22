@@ -99,3 +99,15 @@
 .Update:active {
   box-shadow: none;
 }
+.error{
+  width: 100%;
+  text-align: center;
+  background-color: rgb(221, 47, 47);
+  color: white;
+}
+.sucssess{
+  width: 100%;
+  text-align: center;
+  background-color:rgb(18, 177, 18);
+  color: white;
+}

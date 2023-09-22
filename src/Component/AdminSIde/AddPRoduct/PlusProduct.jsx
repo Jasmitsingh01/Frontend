@@ -9,6 +9,7 @@ function PlusProduct() {
   const[ErrorImg,setImgError]=useState('');
   const[ErrorDis,setErrorDis]=useState('')
   const[Response,setResponse]=useState()
+  const[Csss,setCsss]=useState("");
  const data= localStorage.getItem('AuthToken');
  
 const FormDataSubmitHandler=async(e)=>{
@@ -27,11 +28,11 @@ const FormDataSubmitHandler=async(e)=>{
   }
   else{
     setImgError('');
+    setErrorDis('')
     const formData = new FormData(e.target);
     formData.append('token',data)
 
     
-// console.log(arr);
    const SendData=await axios.post('http://localhost:8000/admin/AddProduct',formData,{
     headers:{
       'Content-Type': 'application/form-data'
@@ -39,9 +40,11 @@ const FormDataSubmitHandler=async(e)=>{
    })
    if(SendData.data.Response){
     setResponse(SendData.data.Response);
+    setCsss(Css.sucssess);
    }
    else{
     setResponse(SendData.data.error)
+    setCsss(Css.error)
     
    }
   }
@@ -61,7 +64,7 @@ if(!data){
 else{
   return (
     <div className={Css.Main}>
-      <div>
+      <div className={Csss}>
         {Response}
       </div>
       <div>

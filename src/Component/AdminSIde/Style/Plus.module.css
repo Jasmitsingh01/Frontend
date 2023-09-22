@@ -78,3 +78,17 @@
 .button:active {
   background-color: rgb(4, 143, 4);
 }
+.error{
+  width: 100%;
+  text-align: center;
+  background-color: rgb(221, 47, 47);
+  color: white;
+  font-size: 36px;
+}
+.sucssess{
+  width: 100%;
+  text-align: center;
+  background-color:rgb(18, 177, 18);
+  color: white;
+  font-size: 36px;
+}

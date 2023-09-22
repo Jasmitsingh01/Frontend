@@ -30,6 +30,9 @@ function AddProductTable({ Func }) {
   const [Delete, setDelete] = useState({});
   const [DeleteActive, setDeleteActive] = useState(false);
 
+  //Error Css
+  const [Error,setCssEe]=useState("");
+
   const data = localStorage.getItem("AuthToken");
 
   const Details = (value) => {
@@ -58,12 +61,16 @@ function AddProductTable({ Func }) {
       );
       if (GetData.data.error === "NO Products !!!") {
         seterror(GetData.data.error);
+        setCssEe(Css.error)
         setData([]);
       } else if (GetData.data.error === "Something went worng") {
         seterror(GetData.data.error);
+        setCssEe(Css.error)
         setData([]);
       } else {
         seterror("");
+        setCssEe(Css.sucssess)
+        
         setData(GetData.data.Products);
       }
     };
@@ -506,7 +513,7 @@ function AddProductTable({ Func }) {
     );
   } else {
     return (
-      <div>
+      <div className={Error}>
         <h1>{error}</h1>
       </div>
     );
