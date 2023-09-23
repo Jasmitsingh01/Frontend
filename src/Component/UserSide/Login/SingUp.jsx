@@ -27,7 +27,7 @@ function SingUp() {
       );
     } else {
       seterror("");
-      const response = await axios.post("https://ecommerce-production-c6bb.up.railway.app/user/singup", {
+      const response = await axios.post("https://ecommerce-production-a1ff.up.railway.app/user/singup", {
         name: Name,
         User: userName,
         email: Email,

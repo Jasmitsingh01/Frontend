@@ -100,7 +100,7 @@ function AddProductTable({ Func }) {
       const Uid = Delete.UserId;
       const Pid = Delete.ProductId;
       const DeleteDatas = await axios.post(
-        "https://ecommerce-production-c6bb.up.railway.app/admin/DeleteProduct",
+        "https://ecommerce-production-a1ff.up.railway.app/admin/DeleteProduct",
         {
           Uid,
           Pid,

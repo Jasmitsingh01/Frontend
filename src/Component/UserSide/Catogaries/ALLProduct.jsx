@@ -32,7 +32,7 @@ function ALLProduct() {
 
   useEffect(() => {
     const Data = async () => {
-      const Data = await axios.get("https://ecommerce-production-c6bb.up.railway.app/user/totalPages");
+      const Data = await axios.get("https://ecommerce-production-a1ff.up.railway.app/user/totalPages");
       if (Data.data.operation === "true") {
 
         setPage(Data.data.data);

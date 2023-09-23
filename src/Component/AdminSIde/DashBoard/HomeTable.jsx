@@ -22,7 +22,7 @@ function HomeTable() {
       }
     };
     const DispacthProduct=async()=>{
-      const D=await axios.post(`https://ecommerce-production-c6bb.up.railway.app/admin/Dispacth`,{
+      const D=await axios.post(`https://ecommerce-production-a1ff.up.railway.app/admin/Dispacth`,{
         Data:Dispacth
       })
       if(D.data.Operation==="Success"){
