@@ -11,7 +11,7 @@ function HomeTable() {
   useEffect(() => {
     const GetData = async () => {
       const server = await axios.get(
-        `ecommerce-production-c6bb.up.railway.app/admin/Order/${data}`
+        `https://ecommerce-production-a1ff.up.railway.app/admin/Order/${data}`
       );
       if (server.data.Operation === "Success") {
         setOrder(server.data.data);
