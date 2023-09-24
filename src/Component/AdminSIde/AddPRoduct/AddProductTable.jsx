@@ -57,7 +57,7 @@ function AddProductTable({ Func }) {
   useEffect(() => {
     const Data = async () => {
       const GetData = await axios.get(
-        `https://ecommerce-production-c6bb.up.railway.app/admin/GetProduct/${data}`
+        `https://ecommerce-production-a1ff.up.railway.app/admin/GetProduct/${data}`
       );
       if (GetData.data.error === "NO Products !!!") {
         seterror(GetData.data.error);
@@ -76,7 +76,7 @@ function AddProductTable({ Func }) {
     };
     const DataUpDate = async () => {
       const GetData = await axios.put(
-        `https://ecommerce-production-c6bb.up.railway.app/admin/AddProduct`,
+        `https://ecommerce-production-a1ff.up.railway.app/admin/AddProduct`,
         {
           Name,
           Price,
