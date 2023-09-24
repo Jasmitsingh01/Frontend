@@ -37,7 +37,7 @@ function ALLProduct() {
 
         setPage(Data.data.data);
         const response = await axios.get(
-          `https://ecommerce-production-c6bb.up.railway.app/user/Catogaries/store?page=${CurrentPage}&limit=4`
+          `https://ecommerce-production-a1ff.up.railway.app/user/Catogaries/store?page=${CurrentPage}&limit=4`
         );
         if (response.data.operation === "success") {
           setData(response.data.data);
