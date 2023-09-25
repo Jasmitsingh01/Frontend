@@ -57,7 +57,7 @@ function AddProductTable({ Func }) {
   useEffect(() => {
     const Data = async () => {
       const GetData = await axios.get(
-        `https://powerful-squirrel.railway.internal/admin/GetProduct/${data}`
+        `https://powerful-squirrel-production.up.railway.app//admin/GetProduct/${data}`
       );
       if (GetData.data.error === "NO Products !!!") {
         seterror(GetData.data.error);
@@ -76,7 +76,7 @@ function AddProductTable({ Func }) {
     };
     const DataUpDate = async () => {
       const GetData = await axios.put(
-        `https://powerful-squirrel.railway.internal/admin/AddProduct`,
+        `https://powerful-squirrel-production.up.railway.app//admin/AddProduct`,
         {
           Name,
           Price,
@@ -100,7 +100,7 @@ function AddProductTable({ Func }) {
       const Uid = Delete.UserId;
       const Pid = Delete.ProductId;
       const DeleteDatas = await axios.post(
-        "https://powerful-squirrel.railway.internal/admin/DeleteProduct",
+        "https://powerful-squirrel-production.up.railway.app//admin/DeleteProduct",
         {
           Uid,
           Pid,

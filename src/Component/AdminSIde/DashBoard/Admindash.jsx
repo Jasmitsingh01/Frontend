@@ -26,7 +26,7 @@ function Admindash() {
 }
 useEffect(()=>{
 const data=async()=>{
-  const Values= await axios.get("https://powerful-squirrel.railway.internal/admin/AllValues");
+  const Values= await axios.get("https://powerful-squirrel-production.up.railway.app//admin/AllValues");
   if(Values.data.operation==="Success"){
     setval({
       Product:Values.data.Total_Product,

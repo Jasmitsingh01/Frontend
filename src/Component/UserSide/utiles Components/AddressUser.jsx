@@ -11,7 +11,7 @@ function AddressUser() {
     
     const Data = async () => {
       const response = await axios.get(
-        `https://powerful-squirrel.railway.internal/user/GetDetalis/${Token}`
+        `https://powerful-squirrel-production.up.railway.app//user/GetDetalis/${Token}`
       );
       if (response.data.operation === "Sucess") {
         const Data = JSON.stringify(response.data.data);
@@ -40,7 +40,7 @@ function AddressUser() {
       e.target.Locality.value +
       " " +
       e.target.PinCode.value;
-    const response = await axios.post("https://powerful-squirrel.railway.internal/user/SaveData", {
+    const response = await axios.post("https://powerful-squirrel-production.up.railway.app//user/SaveData", {
       token: Token,
       Phone: e.target.Phone.value,
       Address: Address,

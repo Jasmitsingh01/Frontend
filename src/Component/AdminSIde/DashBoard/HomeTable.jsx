@@ -11,7 +11,7 @@ function HomeTable() {
   useEffect(() => {
     const GetData = async () => {
       const server = await axios.get(
-        `https://powerful-squirrel.railway.internal/admin/Order/${data}`
+        `https://powerful-squirrel-production.up.railway.app//admin/Order/${data}`
       );
       if (server.data.Operation === "Success") {
         setOrder(server.data.data);
@@ -22,7 +22,7 @@ function HomeTable() {
       }
     };
     const DispacthProduct=async()=>{
-      const D=await axios.post(`https://powerful-squirrel.railway.internal/admin/Dispacth`,{
+      const D=await axios.post(`https://powerful-squirrel-production.up.railway.app//admin/Dispacth`,{
         Data:Dispacth
       })
       if(D.data.Operation==="Success"){

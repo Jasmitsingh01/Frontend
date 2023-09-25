@@ -14,7 +14,7 @@ function AdminProfile() {
   const Datas = localStorage.getItem("AuthToken");
   useEffect(() => {
     const Data = async () => {
-      const response = await axios.post("https://powerful-squirrel.railway.internal/admin/user", {
+      const response = await axios.post("https://powerful-squirrel-production.up.railway.app//admin/user", {
         token: Datas,
       });
       if (response.data.opteration === "Success") {
