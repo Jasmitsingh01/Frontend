@@ -21,7 +21,7 @@ function HomePageProduct() {
 
 useEffect(()=>{
   const Data=async()=>{
-  const response=await axios.get('https://ecommerce-production-a1ff.up.railway.app/user/HomeProdut');
+  const response=await axios.get('https://powerful-squirrel.railway.internal/user/HomeProdut');
  if(response.data.operation==="Success"){
 setData(response.data.Data)
 }

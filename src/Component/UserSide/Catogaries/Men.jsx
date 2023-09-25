@@ -35,11 +35,11 @@ function MenProduct() {
 
   useEffect(() => {
     const Data = async () => {
-      const Data = await axios.get("https://ecommerce-production-a1ff.up.railway.app/user/totalPages");
+      const Data = await axios.get("https://powerful-squirrel.railway.internal/user/totalPages");
       if (Data.data.operation === "true") {
         setPage(Data.data.data);
         const response = await axios.get(
-          `https://ecommerce-production-a1ff.up.railway.app/user/Catogaries/men?page=${CurrentPage}&limit=4`
+          `https://powerful-squirrel.railway.internal/user/Catogaries/men?page=${CurrentPage}&limit=4`
         );
         if (response.data.operation === "success") {
           setData(response.data.data);

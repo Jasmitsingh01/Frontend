@@ -36,13 +36,13 @@ function Women() {
 
   useEffect(() => {
     const Data = async () => {
-      const Data = await axios.get("https://ecommerce-production-a1ff.up.railway.app/user/totalPages");
+      const Data = await axios.get("https://powerful-squirrel.railway.internal/user/totalPages");
 
       if (Data.data.operation === "true") {
         setPage(Data.data.data);
         seterror("");
         const response = await axios.get(
-          "https://ecommerce-production-a1ff.up.railway.app/user/Catogaries/women?page=1&limit=10"
+          "https://powerful-squirrel.railway.internal/user/Catogaries/women?page=1&limit=10"
         );
         if (response.data.operation === "success") {
           setData(response.data.data);
