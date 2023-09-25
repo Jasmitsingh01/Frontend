@@ -58,7 +58,7 @@ function ProductDetails() {
 useEffect(() => {
 
   const Data=async()=>{
-    const Response= await axios.get(`https://powerful-squirrel-production.up.railway.app//user/MainProduct/${id}`);
+    const Response= await axios.get(`https://powerful-squirrel-production.up.railway.app/user/MainProduct/${id}`);
     const [Product]=Response.data.data;
     if(Response.data.operation==="Success"){
             setData(Product)

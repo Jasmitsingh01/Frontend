@@ -14,7 +14,7 @@ function SingUpA() {
       seterror(`Password Should have 8 Characters `);
     } else {
       seterror("");
-      const response = await axios.post("https://powerful-squirrel-production.up.railway.app//admin/singup", {
+      const response = await axios.post("https://powerful-squirrel-production.up.railway.app/admin/singup", {
         name: e.target.Name.value,
         User: e.target.UserName.value,
         email: e.target.email.value,
