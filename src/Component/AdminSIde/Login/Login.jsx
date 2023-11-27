@@ -11,7 +11,7 @@ function Login() {
       seterror("Password Should Have 8 characters");
     } else {
       seterror("");
-      const response = await axios.post("https://powerful-squirrel-production.up.railway.app/admin/login", {
+      const response = await axios.post("https://my-web-qp94.onrender.com/admin/login", {
         email: e.target.email.value,
         Password: e.target.Password.value,
       });

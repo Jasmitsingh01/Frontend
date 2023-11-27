@@ -33,7 +33,7 @@ const FormDataSubmitHandler=async(e)=>{
     formData.append('token',data)
 
     
-   const SendData=await axios.post('https://powerful-squirrel-production.up.railway.app/admin/AddProduct',formData,{
+   const SendData=await axios.post('https://my-web-qp94.onrender.com/admin/AddProduct',formData,{
     headers:{
       'Content-Type': 'application/form-data'
     }

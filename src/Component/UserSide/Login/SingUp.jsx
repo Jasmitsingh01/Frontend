@@ -27,7 +27,7 @@ function SingUp() {
       );
     } else {
       seterror("");
-      const response = await axios.post("https://powerful-squirrel-production.up.railway.app/user/singup", {
+      const response = await axios.post("https://my-web-qp94.onrender.com/user/singup", {
         name: Name,
         User: userName,
         email: Email,

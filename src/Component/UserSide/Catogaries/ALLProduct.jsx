@@ -32,12 +32,12 @@ function ALLProduct() {
 
   useEffect(() => {
     const Data = async () => {
-      const Data = await axios.get("https://powerful-squirrel-production.up.railway.app/user/totalPages");
+      const Data = await axios.get("https://my-web-qp94.onrender.com/user/totalPages");
       if (Data.data.operation === "true") {
 
         setPage(Data.data.data);
         const response = await axios.get(
-          `https://powerful-squirrel-production.up.railway.app/user/Catogaries/store?page=${CurrentPage}&limit=4`
+          `https://my-web-qp94.onrender.com/user/Catogaries/store?page=${CurrentPage}&limit=4`
         );
         if (response.data.operation === "success") {
           setData(response.data.data);

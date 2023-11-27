@@ -21,7 +21,7 @@ function HomePageProduct() {
 
 useEffect(()=>{
   const Data=async()=>{
-  const response=await axios.get('https://powerful-squirrel-production.up.railway.app/user/HomeProdut');
+  const response=await axios.get('https://my-web-qp94.onrender.com/user/HomeProdut');
  if(response.data.operation==="Success"){
 setData(response.data.Data)
 }
