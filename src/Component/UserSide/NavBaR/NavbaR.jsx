@@ -79,9 +79,7 @@ const UtilHandler=()=>{
           <li id="Home" className={Home}>
             <Link to="/">Home</Link>
           </li>
-          <li id="About" className={About}>
-            <Link to="/About">About us</Link>
-          </li>
+          
           <li id="Contact" className={Contact}>
             <Link to="/Contact"> Contact us</Link>
           </li>
@@ -115,9 +113,6 @@ const UtilHandler=()=>{
    <ul className={Css.ResponsiveLink}>
           <li id="Home" className={Home} onClick={()=>UtilHandler()}>
             <Link to="/">Home</Link>
-          </li>
-          <li id="About" className={About} onClick={()=>UtilHandler()}>
-            <Link to="/About">About us</Link>
           </li>
           <li id="Contact" className={Contact} onClick={()=>UtilHandler()}>
             <Link to="/Contact"> Contact us</Link>
